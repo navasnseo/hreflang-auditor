@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hreflang-auditor"
+version = "1.0.0"
+description = "A CLI tool that audits hreflang implementations for International SEO issues: missing self-references, missing x-default, broken return tags, conflicting language codes, and more."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [
+    { name = "Navas" }
+]
+keywords = ["seo", "international-seo", "hreflang", "technical-seo", "multilingual-seo", "audit"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Other Audience",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Internet :: WWW/HTTP :: Site Management",
+]
+dependencies = [
+    "requests>=2.31",
+    "beautifulsoup4>=4.12",
+    "colorama>=0.4.6",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4"]
+
+[project.scripts]
+hreflang-auditor = "hreflang_auditor.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["hreflang_auditor*"]
