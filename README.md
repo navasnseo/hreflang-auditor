@@ -23,7 +23,7 @@ failure patterns that cause those problems.
 ## Install
 
 ```bash
-git clone https://github.com/<your-username>/hreflang-auditor.git
+git clone https://github.com/navasnseo/hreflang-auditor.git
 cd hreflang-auditor
 pip install -e .
 ```
