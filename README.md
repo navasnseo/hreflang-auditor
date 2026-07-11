@@ -49,7 +49,10 @@ Audit a page **and** verify every alternate URL links back correctly (recommende
 hreflang-auditor audit https://example.com --deep
 ```
 
-Audit every URL in a sitemap that carries `xhtml:link` hreflang annotations:
+### Experimental Features
+
+> ⚠️ **Experimental:** Sitemap auditing is an early implementation in **v1.0.0**. It may not work correctly with all sitemap formats and large sitemap indexes.
+
 
 ```bash
 hreflang-auditor sitemap https://example.com/sitemap.xml --deep --limit 100 --delay 0.5
@@ -103,8 +106,7 @@ pytest tests/ -v
 
 ## About
 
-Built by [Navas](https://github.com/), International SEO & GEO consultant specializing
-in multilingual and multi-search-engine (Google / Baidu / Naver) technical SEO.
+Built by [Navas](https://github.com/), an International SEO Consultant and Expert specializing in multilingual, multi-regional, and semantic search optimization. This project was created to help SEO professionals audit hreflang implementations more efficiently.
 
 ## License
 
