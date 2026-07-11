@@ -3,7 +3,9 @@
 A lightweight command-line tool for auditing **hreflang** implementations — built for
 International SEO work across multilingual and multi-regional websites.
 
-Most hreflang bugs never throw a visible error. A page can look perfectly fine in the
+Most hreflang bugs never throw a visible error. ## Example Output
+
+![CLI Output](cli-output.png) A page can look perfectly fine in the
 browser while quietly telling Google to ignore it in favor of a duplicate, or while
 "leaking" the wrong language into the wrong market. This tool catches the specific
 failure patterns that cause those problems.
